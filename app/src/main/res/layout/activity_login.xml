@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Login_Activity"
+    tools:text="submit"
+    android:background="@drawable/road"
+
+
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:gravity="center"
+        android:text="Login"
+        style="@style/Casual"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="60sp">
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        android:theme="@style/MyEditTextTheme"
+        android:textColorHint="@color/cardview_light_background"
+        android:gravity="center_vertical"
+        app:errorEnabled="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textColor="@color/cardview_light_background"
+            android:hint="Email ID"
+
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/cardview_light_background"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        android:theme="@style/MyEditTextTheme"
+        app:errorEnabled="true">
+
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_light_background"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@layout/button"
+            android:textColor="@color/cardview_light_background"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/login"
+            android:onClick="login"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="Login"
+            android:textColor="@color/cardview_light_background"
+            android:background="@layout/button"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="signup"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/cardview_light_background"
+        android:text="Click Here to signup"
+        />
+
+</LinearLayout>

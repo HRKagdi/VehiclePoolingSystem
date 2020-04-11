@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SourceDestinationSeatSelection"
+    android:gravity="center"
+    android:background="@drawable/road"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:gravity="center"
+        android:text="Journey"
+        style="@style/Casual"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="60sp">
+
+    </TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/source"
+        android:text="Select Source"
+        android:background="@layout/button"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/cardview_light_background"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/destination"
+        android:text="Select Destination"
+        android:background="@layout/button"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginBottom="5dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll"
+        >
+    <Spinner
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectSeats"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:id="@+id/dob"
+        android:text="Choose date"
+        android:background="@layout/button"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginBottom="5dp"
+        />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker"
+            android:text="Choose time"
+            android:background="@layout/button"
+            android:textColor="@color/cardview_light_background"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:background="@layout/button"
+        android:textColor="@color/cardview_light_background"
+
+        />
+
+</LinearLayout>

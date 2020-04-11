@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "228880957273",
+    "firebase_url": "https://vehicle-pooling-d0874.firebaseio.com",
+    "project_id": "vehicle-pooling-d0874",
+    "storage_bucket": "vehicle-pooling-d0874.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228880957273:android:464b4bf0ea1069f3e31648",
+        "android_client_info": {
+          "package_name": "com.example.vehiclepooling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228880957273-tmm5rdjru9oaueh3j2qmr5uetln3u07t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vehiclepooling",
+            "certificate_hash": "9369bccbe5dcf66206057ee96a24ba91d7ec74bf"
+          }
+        },
+        {
+          "client_id": "228880957273-qgvdgsjdnq6so6mun9kmrbg20acs2qo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdShhalEV-mqOSziflRlDCq9o0R5XRhcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228880957273-qgvdgsjdnq6so6mun9kmrbg20acs2qo6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

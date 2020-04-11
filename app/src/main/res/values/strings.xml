@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Vehicle Pooling</string>
+
+    <string-array name="vh_type">
+        <item>2</item>
+        <item>4</item>
+
+    </string-array>
+    <string name="open">Vehicle Pooling</string>
+    <string name="close">Vehicle Pooling</string>
+</resources>

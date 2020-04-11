@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Vr"
+    android:background="@drawable/road"
+    tools:text="submit">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="80dp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Registration"
+            android:textColor="@color/cardview_light_background"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            style="@style/Casual"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:theme="@style/MyEditTextTheme"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/cardview_light_background"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            app:errorEnabled="true"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_vh_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cardview_light_background"
+                android:hint="Vehicle Name"
+
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seater :"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18dp"
+                />
+            <Spinner
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+
+                />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/cardview_light_background"
+            app:errorEnabled="true"
+            android:theme="@style/MyEditTextTheme"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_vh_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vehicle Registration Number"
+                android:textColor="@color/cardview_light_background"
+                android:inputType="text"
+                android:maxLength="10"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/cardview_light_background"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            app:errorEnabled="true"
+            android:theme="@style/MyEditTextTheme"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_vh_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vehicle color"
+                android:textColor="@color/cardview_light_background"
+                android:inputType="text"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+                android:id="@+id/bt2"
+                android:textColor="@color/cardview_light_background"
+                android:background="@layout/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:onClick="reset"
+                android:text="Reset" />
+
+            <Button
+
+                android:id="@+id/bt1"
+                android:textColor="@color/cardview_light_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@layout/button"
+                android:onClick="register"
+
+                android:text="Register" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

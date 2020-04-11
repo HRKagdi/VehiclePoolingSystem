@@ -1,0 +1,41 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Casual">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">Casual</item>
+    </style>
+
+    <style name="NavigationMapRoute">
+        <!-- Colors -->
+        <item name="routeColor">@color/mapboxBlue</item>
+        <item name="routeModerateCongestionColor">@color/mapboxYellow</item>
+        <item name="routeSevereCongestionColor">@color/mapboxPink</item>
+        <item name="routeShieldColor">@color/mapboxWhite</item>
+        <!-- Scales -->
+        <item name="routeScale">1.0</item>
+    </style>
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@color/cardview_light_background</item>
+    </style>
+    <style name="MyEditTextTheme">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">@color/cardview_light_background</item>
+        <item name="colorControlActivated">@color/cardview_light_background</item>
+        <item name="colorControlHighlight">@color/cardview_light_background</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+    </style>
+
+    <style name="NavigationView" parent="Theme.AppCompat.NoActionBar">
+        <item name="navigationViewPrimary">@color/mapboxWhite</item>
+        <item name="navigationViewSecondary">@color/mapboxBlue</item>
+        <item name="navigationViewAccent">@color/mapboxPink</item>
+    </style>
+</resources>
